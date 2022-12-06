@@ -7,8 +7,15 @@ public class Login {
     private String contrasena;
     private String token;
 
-    public Login(String email, String contrasena, String token) {
+    public Login(String email, String contrasena) {
+        this.email=email;
+        this.contrasena=contrasena;
     }
+    
+    public Login(String token) {
+        this.token=token;
+    }
+    
      public Login() {
     }
 
@@ -35,6 +42,12 @@ public class Login {
 
     public void setToken(String token) {
         this.token = token;
+    }
+    
+        @Override
+    public 
+        String toString() {
+        return token;
     }
     
 
